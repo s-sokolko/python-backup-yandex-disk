@@ -1,0 +1,3 @@
+TMPDIR = '/opt/backup/tmp'
+YANDEX_LOGIN = 'login'
+YANDEX_PASSWORD = 'pass'
