@@ -20,7 +20,7 @@ os.chown(TMPDIR, 0, 0)
 os.chmod(TMPDIR, 0o700)
 
 
-cmd = 'docker exec -it db-site pg_dump -U postgres > %s/db.backup' % TMPDIR
+cmd = 'docker exec db-site pg_dump -U postgres > %s/db.backup' % TMPDIR
 os.system(cmd)
 
 fullname = 'backups/%(filename)s' % {'filename': filename}
